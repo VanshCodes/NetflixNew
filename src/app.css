@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+	.small_logo {
+		@apply w-32 object-contain;
+	}
+	.buttonItem {
+		@apply h-10 text-sm bg-gray-800 bg-opacity-50 text-white p-2 w-32 hover:bg-opacity-90 focus:animate-ping focus:outline-none rounded-md;
+	}
+}
+
+.image-rendering-pixelated {
+	image-rendering: pixelated;
+}
+
+.poop {
+	display: none;
+}
