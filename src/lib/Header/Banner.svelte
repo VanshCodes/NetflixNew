@@ -4,6 +4,7 @@
 	import { onMount } from 'svelte';
 	import type { Movie } from '$data/types/tmdb.types';
 	import axios from 'axios';
+	// import PlayArrow from 'svelte-material-icons/PlayArrow.svelte';
 	let randomMovieStore: Movie | undefined;
 	// $: randomMovie = $MovieStore ? $MovieStore.randomMovie :
 	onMount(async () => {
@@ -35,7 +36,8 @@
 				<!-- content here -->
 
 				<button class="buttonItem text-gray-100 bg-red-500 font-extrabold flex items-center">
-					<span class="material-icons mx-2 text-4xl text-black"> play_arrow </span>
+					<span class="material-icons mx-2 text-4xl text-black"> ► </span>
+
 					<div class="text-lg">Play</div>
 				</button>
 				<button class="buttonItem text-lg"> More Info</button>
